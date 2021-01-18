@@ -126,10 +126,90 @@ The list elements have a bunch of built in properties to help customize for your
 
 Implement the `Home` Screen using FlatList Component.
 
-=> Screen Here
+![home screen](./images/home-screen.jpg)
 
 > Create a new folder for `Home` screen under `screens`.
 
-### Helpful Links
+use the following snippets 👇:
 
-- [React Native Testing Library](https://github.com/callstack/react-native-testing-library)
+```tsx
+// src/Home/Categories.tsx
+import * as React from "react";
+import { StyleSheet, View, Text, FlatList } from "react-native";
+
+type CategoryType = {
+  label: string;
+  total: number;
+  color: string;
+};
+
+const data: CategoryType[] = [
+  { label: "inbox", total: 2, color: "#EBEFF5" },
+  { label: "work", total: 2, color: "#61DEA4" },
+  { label: "Shopping", total: 3, color: "#F45E6D" },
+  { label: "Family", total: 1, color: "#FFE761" },
+  { label: "Personal", total: 4, color: "#B678FF" },
+];
+
+const CategoryItem = () => {
+  return (
+    <View style={styles.item}>
+      <Text style={styles.label}>label</Text>
+      <Text style={styles.total}>total task</Text>
+    </View>
+  );
+};
+
+export const Categories = () => {};
+
+const styles = StyleSheet.create({
+  item: {},
+  label: {},
+  total: {},
+});
+```
+
+```tsx
+// src/Home/Tasks.tsx
+import * as React from "react";
+import { StyleSheet, View, Text, FlatList } from "react-native";
+
+type TaskType = {
+  label: string;
+  done: boolean;
+  color: string;
+};
+
+const data: TaskType[] = [
+  { label: "Start making a presentation", done: false, color: "#EBEFF5" },
+  { label: "Pay for rent", done: false, color: "#61DEA4" },
+  { label: "Buy a milk", done: false, color: "#F45E6D" },
+  {
+    label: "Don’t forget to pick up Mickael from school",
+    done: true,
+    color: "#FFE761",
+  },
+  { label: "Buy a chocolate for Charlotte", done: false, color: "#B678FF" },
+];
+
+const TaskItem = () => {
+  return (
+    <View style={styles.item}>
+      <View style={styles.done} />
+      <Text style={styles.label}>{label}</Text>
+      <View style={styles.circle} />
+    </View>
+  );
+};
+
+export const Tasks = () => {};
+
+const styles = StyleSheet.create({
+  item: {},
+  label: {},
+  done: {},
+  circle: {},
+});
+```
+
+> Use [react-native-svg](https://github.com/react-native-svg/react-native-svg) & [SVG to JSX Figma plugin](https://www.figma.com/community/plugin/749818562498396194/SVG-to-JSX) for svg icons.

@@ -70,9 +70,9 @@ Create 3 squares that are vertically and horizontally centered. Each square shou
 
 ## 🧑‍💻 Exercise 2
 
-Use All we learned from Basic components and styling chapters and implement the following Screen:
+Use All we learned from Basic components and styling chapters and implement the following Screen: [Figma File ](https://www.figma.com/file/bu3I2wAKP3s59tMO3Z2JWk/Tasker?node-id=20510%3A681)
 
-=> Screen Here
+![sing-in Screen](./images/sign-in-screen.jpg)
 
 > Make sure to create a `screens` folder inside `src` and create your screen under `Login` screen.
 

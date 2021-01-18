@@ -8,13 +8,32 @@ description: "Learn React Native With Youssouf El Azizi"
 
 Open the project in VS Code and you will see the following folder structure :
 
-tree here
+```bash
+.
+├── App.tsx
+├── __tests__
+├── android
+├── app.json
+├── babel.config.js
+├── index.js
+├── ios
+├── metro.config.js
+├── node_modules
+├── package.json
+├── tsconfig.json
+├── .eslintrc.js
+├── .prettierrc.js
+└── yarn.lock
+```
 
 - `index.js` - this is the main entry point of your application. It is equivalent to React on the web mounting the project to the root DOM node
-- `App.js` - this is the file that we care the most about. This is where we'll be writing all our code
+- `App.ts` - this is the file when we can find the root component.
 - `/android` and `/ios` - these are the folders where all the native code lives. If we needed to add or edit any platform specific native code, this is where we'd have to look. We also need to go into these folders if we have to install any native libraries
-- `.buckconfig` and `.flowconfig` - the facebook react native template comes with flow pre-installed. Using this is optional though and we will be sticking with plain React Native in this workshop.
-- `.prettierrc.js` this is a code formatter which is again optional, but you can read more about it in our code style chapter
+- `.`
+- `tsconfig.json` - typescript config.
+- `.eslintrc.js`, `.prettierrc.js` - eslint and prettier config.
+- `metro.config.js` - Development server configuration.
+- `babel.config.js` - babel config file.
 
 ### Setup typescript for easy import
 
@@ -32,7 +51,6 @@ Aso you will need to use module-resolver babel plugin to update resolver root fo
 
 ```js
 plugins: [
-    'module:react-native-dotenv',
     [
       'module-resolver',
       {
@@ -52,4 +70,11 @@ plugins: [
     ],
   ],
 
+
+
+
 ```
+
+## 👨🏻‍💻 Exercise
+
+Open your project on VS Code and configure `babel-plugin-module-resolver`.

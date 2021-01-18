@@ -6,42 +6,61 @@ section: "Welcome"
 description: "Learn React Native With Youssouf El Azizi"
 ---
 
-## Format
+In this course, you'll be following along with me while exploring the concepts of React Native while building a complete React Native App.
 
-In this course, you'll be following along with me while exploring the concepts of React Native while building a simple TO-D0 Application.
+By the end, we should create a production-ready application called Tasker (An excellent way to say TO-DO App 😀) based on the following prototype 👇
 
-To get the most out of the course:
+[Tasker Figma File ](https://www.figma.com/file/bu3I2wAKP3s59tMO3Z2JWk/Tasker)
 
-- Ask
-  follow this guide, and make sure to practice what you are learning as possible as you can.
+<video autoplay controls>
 
-Here is the sample to do app [Figma file ](https://www.figma.com/file/bu3I2wAKP3s59tMO3Z2JWk/TO-DO?node-id=0%3A174)
+  <source
+    src="https://user-images.githubusercontent.com/11137944/104899170-ccb18400-597a-11eb-8253-1f3ebe78fd1d.mov"
+/>
+Your browser does not support the video tag.
+</video>
 
-Getting started
+### To get the most out of the course:
 
-- About React Native
-- Before starting
-- Getting started
-- tools & script
-- project folder
-- debugging
-- basic component
-- styling
-- Screen exercise with native styling
+✅ Make sure to practice what you are learning as much possible as you can
 
-* Styling with restyle.
-* Input text and Simple Forms
-* Unit Test Input with react testing library
+✅ Ask More Questions
 
-* Intro to List and scroll Views
-* Exercise About lists with to do list
+### What we are going to learn in this course
 
-- Home work => create all static screens
+✅ What is React Native ?
 
-* API with React native
-* Navigation with React native navigation
+✅ What I need to know Before starting
 
-- Add Splash screen and App Icon
-- Generate Certification for Android and IOS
-- CI/CD using Appcenter
-- Distribute App to users
+✅ How to Get started
+
+✅ Useful tools & script
+
+✅ How to structure a React Native Project ?
+
+✅ Debugging for React Native
+
+✅ Components & Styling
+
+✅ Advanced styling and How to create a design
+system with restyle
+
+✅ Forms in React Native
+
+✅ Unit Test with react-native-testing-library
+
+✅ List and scroll Views
+
+✅ Network API with React native
+
+✅ Navigation with React navigation
+
+✅ Splash screen and App Icon
+
+✅ Generate Certification for Android and IOS
+
+✅ CI/CD using Appcenter
+
+✅ Distribute App to users
+
+✅ ....

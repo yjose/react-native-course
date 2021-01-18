@@ -8,13 +8,13 @@ description: "Learn React Native With Youssouf El Azizi"
 
 ## Be Ready
 
-It is commonly known that most of React Native developers are also web developers. More than 70% of react-native developers have been working on web development and Reactjs stuff. If it’s your case — probably it is — then I am sorry to tell you that you are going to miss your amazing Web development experience. Because the experience on mobile will not be the same.
+It is commonly known that most of React Native developers are also web developers. More than 70% of React Native developers have been working on web development and Reactjs stuff. If it’s your case — probably it is — then I am sorry to tell you that you are going to miss your amazing Web development experience. Because the experience on mobile will not be the same.
 
 That doesn’t mean that React Native is not ready yet, but I think this because of the amazing stuff that happened on the web platform every Day. However, I guarantee you that this experience will be much fun than developing on Native languages ( Android and swift ).
 
 ## React Native Difficulty Curve ( Is React native difficult ?)
 
-If you are familiar with Reactjs in the web, well you are exactly where you are supposed to be! If not, I think the best way to start with react-native is to build a simple React web project so you can learn some fundamental Reactjs and Reactjs ecosystem stuff without suffering from platform issues that can block your React Native fresh learning path.
+If you are familiar with Reactjs in the web, well you are exactly where you are supposed to be! If not, I think the best way to start with React Native is to build a simple React web project so you can learn some fundamental Reactjs and Reactjs ecosystem stuff without suffering from platform issues that can block your React Native fresh learning path.
 
 The next important idea that I want to highlight in this section is the Difficulty Curve, and when you will find the difficulty during your React Native project.
 
@@ -48,12 +48,12 @@ Just to give you an idea of the setup time, here are some really rough estimates
 - Plain React Native on iOS simulator: ❌
 - Plain React Native on Android emulator: ~3 hours
 
-### TypeScript Or No TypeScript
+### TypeScript 🤔
 
 In the last couple of years, typescript gains a lot of popularity among the react community. We start seeing more and more people tweeting about using typescript as a default language for their react project. This fact convinces more people to use typescript and start asking about the best way to learn it.
 
 It is important to know that typescript is only a superset of JavaScript, which primarily provides optional static typing, classes, and interfaces. This means you are not going to learn an entirely new language.
 
-I start working with typescript for react-native a year ago. I would see that using typescript is super useful to help write clean and secure code. Still, it’s a little bit confusing in the first days as I found myself dealing with typing more than application logic, but after that, I can’t see myself creating a new project without typescript.
+I start working with typescript for React Native a year ago. I would see that using typescript is super useful to help write clean and secure code. Still, it’s a little bit confusing in the first days as I found myself dealing with typing more than application logic, but after that, I can’t see myself creating a new project without typescript.
 
-in case you are interested to learn typescript for react Make sure to read my Article about [How to learn TypeScript for react developers](https://elazizi.com/how-to-learn-type-script-for-react-developers)
+In case you are interested to learn Typescript for react Make sure to read my Article about [How to learn TypeScript for react developers](https://elazizi.com/how-to-learn-type-script-for-react-developers)

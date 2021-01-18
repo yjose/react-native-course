@@ -6,7 +6,7 @@ section: "Getting Started"
 description: "Learn React Native With Youssouf El Azizi"
 ---
 
-I recommend using [VS Code ](https://code.visualstudio.com/) and installing the following extensions for this workshop, but feel free to use you favorite code editor ( sublime ... ).
+I recommend using [VS Code ](https://code.visualstudio.com/) and installing the following extensions for this workshop, but feel free to use your favorite code editor ( sublime ... ).
 
 - [React Native Vs Code Snippet](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 - [Visual Studio Code extension for Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
@@ -39,7 +39,7 @@ echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitl
        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
        "pre-commit": "yarn lint"
     }
-  }
+  },
 
 "lint-staged": {
     "*.{js,jsx,tsx}": "eslint"
@@ -59,3 +59,7 @@ Some Npm script to be added to your `package.json`
 ```
 
 > Make sure to install [npm-run-all](https://github.com/mysticatea/npm-run-all) as Dev deps
+
+### Useful Links
+
+[Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
