@@ -23,13 +23,7 @@ Install react-hook-library
 yarn add react-hook-form
 ```
 
-Example
-TODO :
-
-- register link
-- create a custom
-- Validation
-- create an input with the following props
+Refactor your custom input to support the following `Props` interface.
 
 ```ts
 interface Props extends TextInputProps {
@@ -40,77 +34,71 @@ interface Props extends TextInputProps {
 }
 ```
 
-Create Input Component
+Typing and Validation
 
 ```jsx
-```
+type FormData = {
+  email: string,
+  password: string,
+};
 
-Validation
-
-```jsx
+const validation = {
+  email: {
+    required: { value: true, message: "Email is required" },
+    pattern: {
+      value: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+      message: "Invalid Email Format",
+    },
+  },
+  password: {
+    required: { value: true, message: "Password is required" },
+  },
+};
 ```
 
 Create Form
 
 ```tsx
-import React from "react";
-import { Text, View, TextInput, Button, Alert } from "react-native";
-// form types
-type FormData = {
-  firstName: string;
-  lastName: string;
-};
+export const Login = () => {
+  const { handleSubmit, errors, setValue, register } = useForm<FormData>();
 
-import { useForm, Controller } from "react-hook-form";
-
-export default function App() {
-  const { control, handleSubmit, errors } =
-    useForm < FormData > { defaultValues: {} };
-  const onSubmit = (data) => console.log(data);
-
+  const onSubmit = (data: FormData) => {
+    console.log(data);
+  };
+  React.useEffect(() => {
+    register("email", validation.email);
+    register("password", validation.password);
+  }, [register]);
   return (
-    <View>
-      <Controller
-        control={control}
-        render={({ onChange, onBlur, value }) => (
-          <TextInput
-            style={styles.input}
-            onBlur={onBlur}
-            onChangeText={(value) => onChange(value)}
-            value={value}
-          />
-        )}
-        name="firstName"
-        rules={{ required: true }}
-        defaultValue=""
-      />
-      {errors.firstName && <Text>This is required.</Text>}
-
-      <Controller
-        control={control}
-        render={({ onChange, onBlur, value }) => (
-          <TextInput
-            style={styles.input}
-            onBlur={onBlur}
-            onChangeText={(value) => onChange(value)}
-            value={value}
-          />
-        )}
-        name="lastName"
-        defaultValue=""
-      />
-
-      <Button title="Submit" onPress={handleSubmit(onSubmit)} />
+    <View flex={1} justifyContent="center" padding="m">
+      <Text variant="header" textAlign="center">
+        Sign in
+      </Text>
+      <View marginVertical="xl">
+        <Input
+          placeholder="Email"
+          onChangeText={(t) => setValue("email", t)}
+          error={errors["email"]}
+        />
+        <Input
+          placeholder="Password"
+          onChangeText={(t) => setValue("password", t)}
+          error={errors["password"]}
+        />
+        <Text color="grey" textAlign="right">
+          FORGOT?
+        </Text>
+      </View>
+      <Button label="Sign in" onPress={handleSubmit(onSubmit)} />
+      <Button variant="outline" label="Create account" onPress={() => {}} />
     </View>
   );
-}
+};
 ```
-
-## Example
 
 ## 🧑‍💻 Exercise
 
-Implement `react-hook-form` with Validation for the login form screen.
+Use `react-hook-form` to implement login form with Validation.
 
 ### Helpful Links
 

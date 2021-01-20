@@ -6,7 +6,7 @@ section: "Advanced"
 description: "Learn React Native With Youssouf El Azizi"
 ---
 
-I have used almost all CSS-in-JS 🤨 approaches to style my React Naive application and same as React for the web by the, My conclusion was to use Tailwind CSS for web and restyle for React Native 😎.
+I have used almost all CSS-in-JS 🤨 approaches to style my React Naive application and same as React for the web , My conclusion was to use Tailwind CSS for web and restyle for React Native 😎.
 
 Restyle library by Shopify provides a type-enforced system for building UI components in React Native with TypeScript. It's a library for building UI libraries, with themability as the core focus.
 
@@ -26,28 +26,34 @@ Any project using this library should have a global theme object. It specifies s
 
 Create a folder `ui/theme/index.tsx` under `src` and defined the theme 👇
 
-```jsx
-import { createTheme } from "@shopify/restyle";
+```tsx
+import * as React from "react";
+import {
+  ThemeProvider as ReThemeProvider,
+  TextProps,
+  BoxProps,
+} from "@shopify/restyle";
 
-const palette = {
-  purpleLight: "#8C6FF7",
-  purplePrimary: "#5A31F4",
-  purpleDark: "#3F22AB",
-
-  greenLight: "#56DCBA",
-  greenPrimary: "#0ECD9D",
-  greenDark: "#0A906E",
-
-  black: "#0B0B0B",
-  white: "#F0F2F3",
+type BaseThemeType = typeof BaseTheme & {
+  textVariants: { [key: string]: TextProps<typeof BaseTheme> };
+  buttonVariants: { [key: string]: BoxProps<typeof BaseTheme> };
 };
 
-const theme = createTheme({
+const createTheme = <T extends BaseThemeType>(themeObject: T): T => themeObject;
+
+const BaseTheme = {
   colors: {
-    mainBackground: palette.white,
-    cardPrimaryBackground: palette.purplePrimary,
+    text: "#252A31",
+    background: "white",
+    primary: "#006CFF",
+    // secondary: '#9c27b0',
+    black: "#252A31",
+    white: "white",
+    red: "#FF3E5C",
+    transparent: "transparent",
   },
   spacing: {
+    xs: 4,
     s: 8,
     m: 16,
     l: 24,
@@ -57,10 +63,24 @@ const theme = createTheme({
     phone: 0,
     tablet: 768,
   },
+};
+
+export const theme = createTheme({
+  ...BaseTheme,
+  buttonVariants: {},
+  textVariants: {
+    defaults: {},
+    header: {},
+    subheader: {},
+    body: {},
+  },
 });
 
 export type Theme = typeof theme;
-export default theme;
+
+export const ThemeProvider = ({ children }: { children: React.ReactNode }) => (
+  <ReThemeProvider theme={theme}>{children}</ReThemeProvider>
+);
 ```
 
 Add `ThemeProvider` to your root tree like the following :
@@ -131,12 +151,11 @@ const theme = createTheme({
 ### Custom Components
 
 restyle come with a lot of helper function to help you create Custom component based on your theme.
-here is an example of A Generic button
+Here is an example of A Generic button
 
 ```jsx
 // ui/Button.tsx
-
-import React from 'react';
+import * as React from 'react';
 import {ActivityIndicator, TouchableOpacity} from 'react-native';
 import {
   useRestyle,
@@ -177,8 +196,6 @@ type Props = SpacingProps<Theme> &
     outline?: boolean;
     loading?: boolean;
     disabled?: boolean;
-
-    children?: React.ReactNode;
   };
 
 export const Button = ({
@@ -187,37 +204,31 @@ export const Button = ({
   disabled = false,
   loading = false,
   variant = 'primary',
-  children,
   ...rest
 }: Props) => {
   const props = useRestyle(restyleFunctions, {...rest, variant});
-  const textVariant = 'button_' + variant;
+  const textVariant = ('button_' + variant) as Partial<
+    keyof Omit<Theme['textVariants'], 'defaults'>
+  >;
 
   return (
     <TouchableOpacity onPress={onPress} disabled={disabled}>
       <ButtonContainer
-        opacity={disabled ? 0.4 : 1}
-        borderRadius={12}
-        flexDirection="row"
-        paddingVertical="m"
-        paddingHorizontal="xl"
+        backgroundColor="primary"
+        padding="m"
+        borderRadius={8}
         marginVertical="s"
-        justifyContent="center"
-        alignItems="center"
         {...props}>
         {loading ? (
-          <ActivityIndicator size="small" color="#FFF" />
+          <ActivityIndicator color="#000" />
         ) : (
-          <>
-            {children ? (
-              children
-            ) : (
-              <Text
-                variant={textVariant as Partial<keyof Theme['textVariants']>}>
-                {label}
-              </Text>
-            )}
-          </>
+          <Text
+            textAlign="center"
+            fontWeight="bold"
+            fontSize={18}
+            variant={textVariant}>
+            {label}
+          </Text>
         )}
       </ButtonContainer>
     </TouchableOpacity>
@@ -228,11 +239,9 @@ export const Button = ({
 
 ## 🧑‍💻 Exercise
 
-- Add Restyle to your project and refactor the login screen using the new Approach.
-  - Create a custom `Input` component
-  - Create a Generic `Button` component with two variant `outline` and `primary`
+- Add Restyle to your project and refactor the login screen using restyle Approach.
 
-## HomeWork
+## Home Work
 
 Create All static screens using restyle `Login`, `Home`, `Profile` , `AddToDo` screens.
 

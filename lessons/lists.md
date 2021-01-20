@@ -1,7 +1,7 @@
 ---
 path: "/lists"
 title: "Lists"
-order: "3D"
+order: "3E"
 section: "Basic"
 description: "Learn React Native With Youssouf El Azizi"
 ---
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
 
 SectionList is a similar to FlatList, but it allows you to render items in sections with a header item between. The `data` for the `SectionList` is still an array, but each array item will need to be an object with a title (a string) and a data (an array) prop.
 
-Additionally you can pass in a prop called `renderSectionHeader` which will let you render the title for each section.
+Additionally, you can pass in a prop called `renderSectionHeader` which will let you render the title for each section.
 
 ```jsx
 import React from "react";
@@ -163,9 +163,23 @@ const CategoryItem = () => {
 export const Categories = () => {};
 
 const styles = StyleSheet.create({
-  item: {},
-  label: {},
-  total: {},
+  item: {
+    padding: 12,
+    paddingRight: 24,
+    borderRadius: 8,
+    margin: 4,
+    minWidth: 100,
+  },
+  label: {
+    color: "#252A31",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+  total: {
+    color: "#252A31",
+    fontSize: 12,
+    opacity: 0.5,
+  },
 });
 ```
 
@@ -205,10 +219,39 @@ const TaskItem = () => {
 export const Tasks = () => {};
 
 const styles = StyleSheet.create({
-  item: {},
-  label: {},
-  done: {},
-  circle: {},
+  item: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  itemContent: {
+    flex: 1,
+    paddingVertical: 24,
+    flexDirection: "row",
+    alignItems: "center",
+    borderBottomColor: "rgba(0,0,0,0.1)",
+    borderBottomWidth: 1,
+  },
+  label: {
+    color: "#252A31",
+    fontSize: 18,
+    flex: 1,
+  },
+  icon: {
+    justifyContent: "center",
+    paddingHorizontal: 16,
+  },
+  circle: {
+    width: 12,
+    height: 12,
+    borderRadius: 12,
+    marginHorizontal: 16,
+  },
+  title: {
+    color: "#252A31",
+    fontSize: 34,
+    fontWeight: "bold",
+    paddingVertical: 20,
+  },
 });
 ```
 
