@@ -6,11 +6,11 @@ section: "Welcome"
 description: "Learn React Native With Youssouf El Azizi"
 ---
 
-Lets imagine you need to build a new mobile application. In Order to target 99% of smartphone users, we'll have to build two apps:
+Let's imagine you need to build a new mobile application. In Order to target 99% of smartphone users, we'll have to build two apps:
 
 One for Android and one for iOS, that's mean you'll have to manage two of everything: language, codebases, developer teams, feature sets, release schedules etc.
 
-Hiring two developer teams is expensive, and hiring a single team that has in depth knowledge of both Android and iOS is almost impossible.
+Hiring two developer teams is expensive, and hiring a single team that has in-depth knowledge of both Android and iOS is almost impossible.
 
 React Native is a framework for building cross-platform apps developed by Facebook for solving this problem of managing two of everything. Their goal was to build a platform that enables you to have:
 

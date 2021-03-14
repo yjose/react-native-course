@@ -18,9 +18,9 @@ If you are familiar with Reactjs in the web, well you are exactly where you are 
 
 The next important idea that I want to highlight in this section is the Difficulty Curve, and when you will find the difficulty during your React Native project.
 
-As a developer with Reactjs background, I believe that we start with few struggles with React Native. Getting something to just appear on the screen is straightforward, it’s not challenging but anything more complicated like start a navigation or some native challenging stuff, You are going to start using some third-party libraries. And using some of them will not be the best experience you’d like.
+As a developer with Reactjs background, I believe that we start with few struggles with React Native. Getting something to just appear on the screen is straightforward, it’s not challenging but anything more complicated like start navigation or some native challenging stuff, You are going to start using some third-party libraries. And using some of them will not be the best experience you’d like.
 
-The graph below explains exactly my React Native experience. When I start a new project with some basic stuff it looks like ‘’wait what is simple like that ‘’. Then, after using some third party libs, the project’s progress goes slowly and I face many problems related to those libs upgrade. It’s a normal thing because maintaining a React Native open source project is not a simple task. You need to have a strong background in JS, Java, and Swift. Those third-party libs are developed by great people who might be doing this as a hobby. They have not been paid for them so the quality is not always at its peak. (Speaking of it, I want to give credits to the React Native community for their great work!)
+The graph below explains exactly my React Native experience. When I start a new project with some basic stuffs it looks like ‘’wait what is simple like that ‘’. Then, after using some third party libs, the project’s progress goes slowly and I face many problems related to those libs upgrades. It’s a normal thing because maintaining a React Native open source project is not a simple task. You need to have a strong background in Javascript, Java, and Swift. Those third-party libs are developed by great people who might be doing this as a hobby. They have not been paid for them so the quality is not always at its peak. (Speaking of it, I want to give credits to the React Native community for their great work!)
 
 ![](./images/react-native-dif.png)
 
@@ -56,4 +56,4 @@ It is important to know that typescript is only a superset of JavaScript, which 
 
 I start working with typescript for React Native a year ago. I would see that using typescript is super useful to help write clean and secure code. Still, it’s a little bit confusing in the first days as I found myself dealing with typing more than application logic, but after that, I can’t see myself creating a new project without typescript.
 
-In case you are interested to learn Typescript for react Make sure to read my Article about [How to learn TypeScript for react developers](https://elazizi.com/how-to-learn-type-script-for-react-developers)
+In case you are interested to learn typescript for react Make sure to read my article about [How to learn TypeScript for react developers](https://elazizi.com/how-to-learn-type-script-for-react-developers)
