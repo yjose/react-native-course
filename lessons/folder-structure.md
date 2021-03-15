@@ -28,8 +28,7 @@ Open the project in VS Code and you will see the following folder structure :
 
 - `index.js` - this is the main entry point of your application. It is equivalent to React on the web mounting the project to the root DOM node
 - `App.ts` - this is the file when we can find the root component.
-- `/android` and `/ios` - these are the folders where all the native code lives. If we needed to add or edit any platform specific native code, this is where we'd have to look. We also need to go into these folders if we have to install any native libraries
-- `.`
+- `/android` and `/ios` - these are the folders where all the native code lives. If we needed to add or edit any platform specific native code, this is where we'd have to look. We also need to go into these folders if we have to install any native libraries.
 - `tsconfig.json` - typescript config.
 - `.eslintrc.js`, `.prettierrc.js` - eslint and prettier config.
 - `metro.config.js` - Development server configuration.
