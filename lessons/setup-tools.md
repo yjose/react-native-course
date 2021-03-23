@@ -34,16 +34,25 @@ echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitl
 - Add the following code to your `package.json`
 
 ```json
-"husky": {
-    "hooks": {
-       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-       "pre-commit": "yarn lint"
-    }
-  },
+"scripts": {
+    "prepare": "husky install"
+  }
 
 "lint-staged": {
     "*.{js,jsx,tsx}": "eslint"
   }
+```
+
+- Run the following commands to init husky
+
+```bash
+#init husky
+npx husky init
+
+npx husky add .husky/commit-msg 'yarn commitlint --edit "$1"'
+
+npx husky add .husky/pre-commit "yarn lint"
+
 ```
 
 ### Useful npm scripts
@@ -60,6 +69,10 @@ Some Npm script to be added to your `package.json`
 
 > Make sure to install [npm-run-all](https://github.com/mysticatea/npm-run-all) as Dev deps
 
+👉 https://github.com/yjose/Tasker/commit/196b94dde797f3ee480a6ab54fc5289c72f881bd
+
 ### Useful Links
+
+[Husky](https://typicode.github.io/husky/#/)
 
 [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)

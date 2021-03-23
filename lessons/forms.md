@@ -100,6 +100,8 @@ export const Login = () => {
 
 Use `react-hook-form` to implement login form with Validation.
 
+👉 https://github.com/yjose/Tasker/commit/43c077f5f360b24a84c915c5e4a1c0a8cc528ab3
+
 ### Helpful Links
 
 - [React Hook form](https://react-hook-form.com/)

@@ -55,11 +55,13 @@ React Native has many Core Components for everything from form controls to activ
 
 ## 👨🏻‍💻 Exercise
 
-- Open `App.ts`. Then, create a `View` and a `Text` with "Hello, world"
+- Open `src/index.tsx`. Then, create a `View` and a `Text` with "Hello, world"
 
-- Create a `src/components` folder and create a `Button` component that accepts an `onPress` and `label` prop. Use the `Pressable` and `Text` components to accomplish this.
+- Create a `src/ui` folder and create a `Button` component that accepts an `onPress` and `label` prop. Use the `Pressable` and `Text` components to accomplish this.
 
-- Import your custom button component and render 2 buttons with different labels inside `App.ts`. every button should print a message to our terminal on click.
+- Import your custom button component and render 2 buttons with different labels inside `src/index.tsx`. every button should print a message to our terminal on click.
+
+👉 https://github.com/yjose/Tasker/commit/677b9e64e22c961f03204305cde7d4374b6acda2
 
 ### Helpful links
 

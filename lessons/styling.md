@@ -68,6 +68,8 @@ The "Layout with Flexbox" goes into details on these - use that page for referen
 
 Create 3 squares that are vertically and horizontally centered. Each square should have a unique background color but all shared styles should only be defined once.
 
+👉 https://github.com/yjose/Tasker/commit/677b9e64e22c961f03204305cde7d4374b6acda2
+
 ## 🧑‍💻 Exercise 2
 
 Use All we learned from Basic components and styling chapters and implement the following Screen: [Figma File ](https://www.figma.com/file/bu3I2wAKP3s59tMO3Z2JWk/Tasker?node-id=20510%3A681)
@@ -75,6 +77,8 @@ Use All we learned from Basic components and styling chapters and implement the 
 ![sing-in Screen](./images/sign-in-screen.jpg)
 
 > Make sure to create a `screens` folder inside `src` and create your screen under `Login` screen.
+
+👉 https://github.com/yjose/Tasker/commit/f3c664cda072d65ec85ab1660aa0f98fb9d17e0f
 
 ## Helpful Links
 

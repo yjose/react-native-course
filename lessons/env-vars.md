@@ -17,7 +17,7 @@ The 2nd solution which we recommend to use is [react-native-dotenv](https://gith
 ## Setup react-native-dotenv
 
 ```
-yarn add react-native-dotenv
+yarn add react-native-dotenv -D
 ```
 
 Add plugin to `.babelrc` configuration
@@ -45,10 +45,18 @@ Create a file `types/env.d.ts` in your root folder and type your variables
 
 ```ts
 declare module "@env" {
-  export const API: string;
+  export const API_URL: string;
 }
 ```
 
+⚠️ Make sure to restart your metro server whenever you update the env files
+
+```bash
+yarn start --reset-cache
+```
+
+👉 https://github.com/yjose/Tasker/commit/d318cf0c43c32dc4602f4d6bdf784f897da0bdb4
+
 ### Helpful Links
 
-- [React Query](https://react-query.tanstack.com/)
+- [react-native-dotenv](https://github.com/goatandsheep/react-native-dotenv)

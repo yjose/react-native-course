@@ -241,9 +241,13 @@ export const Button = ({
 
 - Add Restyle to your project and refactor the login screen using restyle Approach.
 
+👉 https://github.com/yjose/Tasker/commit/6f250612b093bd2deed4c2f851da9fd46e1659fd
+
 ## Home Work
 
 Create All static screens using restyle `Login`, `Home`, `Profile` , `AddToDo` screens.
+
+👉 https://github.com/yjose/Tasker/commit/109e9ccbe26fa655c7ad2452e58dfb8da830e14b
 
 ## Helpful Links
 

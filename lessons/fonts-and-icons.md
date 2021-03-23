@@ -26,7 +26,8 @@ module.exports = {
 };
 ```
 
-4. run `react-native link` from the root of the project.
+4. run `yarn react-native link` from the root of the project.
+5. rebuild your app `yarn ios` or `yarn android`
 
 Voila!. You now have custom fonts set up.
 
@@ -40,6 +41,8 @@ const styles = StyleSheet.create({
   },
 });
 ```
+
+👉 https://github.com/yjose/Tasker/commit/c8e9bc6dc3beea92ab696c19debc7e32784da0de
 
 ### Icons
 
@@ -79,3 +82,5 @@ export function Check(props: SvgProps) {
   );
 }
 ```
+
+👉 https://github.com/yjose/Tasker/commit/16d4e1a1d9029ba365d122a199687dd820a2d0a3

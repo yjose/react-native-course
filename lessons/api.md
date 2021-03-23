@@ -152,12 +152,14 @@ export function useAddTask() {
 
 Update `Home` Screen to use Data from API
 
-- Base Url : `https://60020b0d08587400174db917.mockapi.io/api/`
+- Base Url : `https://60520252fb49dc00175b74f7.mockapi.io`
 - Get All tasks : GET --> `/task`
 - Get Task by Id : GET --> `/task/:id`
 - Create New Task : POST --> `/task`
 - Update task : PUT --> `/task/:id`
 - Delete Task : DELETE --> `/task/:id`
+
+👉 https://github.com/yjose/Tasker/commit/7b06bca11e85e48a1a397787ae31dc251ba3e2ac
 
 ### Helpful Links
 

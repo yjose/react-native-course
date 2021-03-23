@@ -78,3 +78,5 @@ plugins: [
 ## 👨🏻‍💻 Exercise
 
 Open your project on VS Code and configure `babel-plugin-module-resolver`.
+
+👉 https://github.com/yjose/Tasker/commit/28cd9d0e288abfc5ec5b3c4f0de733e624acce6d

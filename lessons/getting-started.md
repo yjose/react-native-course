@@ -78,6 +78,8 @@ Create new React Native Project `Tasker` using React Native Typescript template.
 
 Then, run the project on an emulator 📱.
 
+👉 https://github.com/yjose/Tasker/commit/5f8ab7a23b2b7a777a4dc3c7e6669e5cb64bfcd4
+
 ### Helpful Links
 
 - [React Native Docs](https://reactnative.dev/docs/environment-setup)

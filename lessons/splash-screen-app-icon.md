@@ -23,7 +23,7 @@ That’s all. We are ready to use react-native-make.
 If the file is ready, execute the command below to make the App icon.
 
 ```bash
-react-native set-icon --path [path-to-image] --background color
+yarn react-native set-icon --path [path-to-image] --background color
 ```
 
 ## Splash Screen
@@ -44,6 +44,8 @@ we are going to choose to React Native bootsplash over the Splash screen Because
 - Hiding the launch screen is configurable: fade it out with a custom duration or hide it without any animation at all (no fade needed if you want to animate it out!).
 
 => [Setup Splash Screen](https://github.com/zoontek/react-native-bootsplash#setup)
+
+👉 https://github.com/yjose/Tasker/commit/1a14fbe353ce1a5f5e4d372d335d606e1a15f8e1
 
 ### Helpful Links
 

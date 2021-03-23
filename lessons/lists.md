@@ -255,4 +255,4 @@ const styles = StyleSheet.create({
 });
 ```
 
-> Use [react-native-svg](https://github.com/react-native-svg/react-native-svg) & [SVG to JSX Figma plugin](https://www.figma.com/community/plugin/749818562498396194/SVG-to-JSX) for svg icons.
+👉 https://github.com/yjose/Tasker/commit/96f2452c92e11b9645be17f08eaec21999566cd2
