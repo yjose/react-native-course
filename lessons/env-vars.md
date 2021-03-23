@@ -6,9 +6,9 @@ section: "Getting Started"
 description: "Learn React Native With Youssouf El Azizi"
 ---
 
-Using a solution to load environment variables for your React Native application is Very important to make maintaining your keys and URLs an easy task.
+Using a solution to load environment variables for your React Native application is very important to make maintaining your keys and URLs an easy task.
 
-There are multiple solutions like [react-native-config](https://github.com/luggit/react-native-config) which the most popular one but the library requires Native linking and adding or updating new environment variables mean rebuilding the App.
+There are multiple solutions like [react-native-config](https://github.com/luggit/react-native-config) which the most popular one but the library requires Native linking and adding or updating new environment variables and that means rebuilding the App.
 
 Also, [react-native-config](https://github.com/luggit/react-native-config) comes with the possibility to use environment variables on native code (Android/Obj-C) but this requires manual steps to follow.
 
